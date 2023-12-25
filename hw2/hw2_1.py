@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-import hw1.hw1_3 as hw1
+import cv.hw1.hw1_3 as hw1
 
 ##################################################################################
 # Bir önceki ödevdeki kaynak kodları kullanarak DoG ölçek uzayının oluşturulması #
@@ -107,7 +107,7 @@ def main():
     # Yerel ekstremum noktalarını bul
     keypoints = find_local_extrema(DoG)
 
-    original_image = cv2.imread("C:\\Users\\Yldrm\\Desktop\\YL\\Bilgisayarla_Gorme\\Lab\\images\\png\\street.png")  # Gerçek dosya yoluyla değiştirilmeli
+    original_image = cv2.imread("C:\\Users\\Yldrm\\Desktop\\YL\\Bilgisayarla_Gorme\\Lab\\cv\\images\\png\\street.png")  # Gerçek dosya yoluyla değiştirilmeli
     expanded_image = draw_keypoints(original_image, keypoints)
 
     # Genişletilmiş görüntüyü gösterme
